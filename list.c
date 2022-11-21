@@ -34,9 +34,11 @@ List* List_create(){
 			allNodes[i].item = NULL;
 			allNodes[i].nextItem = NULL;
 			allNodes[i].previousItem = NULL;
-			allNodes[i].beingUsed = 0;
-			allNodes[i].alongWithBack = 0;
-			allNodes[i].alongWithForward = 0;
+			allNodes[i].inuse = false;
+			allNodes[i].frontOfBlock = NULL;
+			allNodes[i].backOfBlock = NULL;
+			allNodes[i].NodesInBlock = 0;
+			allNodes[i].nodeNumber = i;
 
 		}
 

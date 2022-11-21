@@ -15,9 +15,11 @@ struct Node_s {
     void* item;
     struct Node_s *nextItem;
     struct Node_s *previousItem;
-    int beingUsed;
-    int alongWithBack;
-    int alongWithForward;
+    bool inuse;
+    struct Node_s *frontOfBlock;
+    struct Node_s *backOfBlock;
+    int NodesInBlock;
+    int nodeNumber;
 
 };
 
